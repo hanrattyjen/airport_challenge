@@ -16,7 +16,7 @@ describe Airport do
       allow(subject).to receive(:stormy?).and_return(false)
     end
     describe '#land_plane' do
-      
+
       it 'can confirm that 1 plane has landed' do
         subject.land_plane(plane)
         expect(subject.planes.count).to eq 1
